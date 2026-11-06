@@ -1,0 +1,56 @@
+/* MEDDPICC Editor: print styles (Cmd/Ctrl+P, "Save as PDF"). */
+
+@page { margin: 0.5in; }
+
+html, body { background: #fff !important; }
+body { font-size: 10.5pt; line-height: 1.4; }
+
+.command-bar,
+.banner,
+.toasts,
+.link-popover,
+.status-picker,
+.summary-strip,
+.title-input,
+#file-input { display: none !important; }
+
+.print-only { display: block !important; }
+
+.app-header { max-width: none; padding: 0 0 10pt; }
+#print-title { margin: 0; font-size: 18pt; }
+
+main { max-width: none; padding: 0; }
+
+.box {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  padding: 8pt 10pt;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+.box-header { margin-bottom: 4pt; }
+.next-steps { margin-bottom: 10pt; }
+.box-grid { gap: 10pt; }
+.group-separator { margin: 12pt 0; }
+
+/* Status label prints next to the heading so meaning survives black and white. */
+.status-label { background: #fff; }
+
+.editor,
+.editor:focus {
+  min-height: 0 !important;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.editor.is-empty::before { content: none; }
+
+.editor a { color: inherit; }
+.editor a::after {
+  content: " (" attr(href) ")";
+  font-size: 0.85em;
+  color: #444;
+  overflow-wrap: anywhere;
+}
+.editor a.print-url-same::after { content: none; }

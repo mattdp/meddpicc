@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MEDDPICC Editor tests</title>
+  <style>
+    body { font-family: system-ui, -apple-system, sans-serif; margin: 24px; color: #1f2328; }
+    #summary { font-size: 18px; font-weight: 700; }
+    #summary.pass { color: #188038; }
+    #summary.fail { color: #b3261e; }
+    li { margin: 2px 0; }
+    .ok::marker { content: "\2713  "; color: #188038; }
+    .bad::marker { content: "\2717  "; color: #b3261e; }
+    .bad pre { background: #fdecea; padding: 6px 8px; white-space: pre-wrap; margin: 4px 0; }
+  </style>
+</head>
+<body>
+  <h1>MEDDPICC Editor tests</h1>
+  <p id="summary">Running&hellip;</p>
+  <ul id="results"></ul>
+
+  <script src="../app/js/config.js"></script>
+  <script src="../app/js/sanitize.js"></script>
+  <script src="../app/js/document.js"></script>
+  <script src="tests.js"></script>
+</body>
+</html>

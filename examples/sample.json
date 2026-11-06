@@ -1,0 +1,43 @@
+{
+  "format": "meddpicc-editor",
+  "version": 1,
+  "title": "Acme Corp - Platform Expansion",
+  "updated_at": "2026-11-06T15:30:00Z",
+  "next_steps": {
+    "content": "<ul><li><strong>Fri:</strong> Send ROI model draft to Priya for review</li><li>Book 30 min with the CFO before end of month (Priya to intro)</li><li>Start security questionnaire with <a href=\"mailto:security@example.com\">security@example.com</a></li></ul>"
+  },
+  "sections": {
+    "metrics": {
+      "status": "green",
+      "content": "<p>Reduce onboarding time from <strong>6 weeks to 2 weeks</strong>. Target: 15% lower first-year churn.</p><p>Baseline numbers confirmed in the <a href=\"https://example.com/discovery-notes\">discovery notes</a>.</p>"
+    },
+    "economic_buyer": {
+      "status": "red",
+      "content": "<p>Likely the CFO, <em>not yet met</em>. Budget sign-off above $100k goes to her.</p>"
+    },
+    "champion": {
+      "status": "blue",
+      "content": "<p>Priya (VP Customer Success). Motivated, but has not yet <u>sold internally</u> without us in the room.</p>"
+    },
+    "identify_pain": {
+      "status": "yellow",
+      "content": "<ul><li>Manual onboarding steps cause missed go-live dates</li><li>Two at-risk renewals tied to slow onboarding</li></ul>"
+    },
+    "decision_criteria": {
+      "status": "white",
+      "content": "<ol><li>Integrates with their CRM</li><li>SSO and audit logs</li><li>Time to value under 30 days</li></ol>"
+    },
+    "decision_process": {
+      "status": "white",
+      "content": "<p>Champion recommends, VP Ops and CFO approve. Decision expected by <strong>end of Q1</strong>.</p>"
+    },
+    "paper_process": {
+      "status": "gray",
+      "content": "<p>Procurement not engaged yet. Not relevant until pricing is agreed.</p>"
+    },
+    "competition": {
+      "status": "white",
+      "content": "<p>Incumbent spreadsheet process (do nothing), plus one competitor in early evaluation.</p>"
+    }
+  }
+}
