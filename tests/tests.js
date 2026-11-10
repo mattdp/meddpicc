@@ -97,8 +97,8 @@
   });
 
   test('sanitize: all attributes dropped except href', function () {
-    eq(S('<p class="x" id="y" style="color:red" data-a="1"><a href="https://a.com/" class="c" target="_blank" rel="x" title="t">a</a></p>'),
-      '<p><a href="https://a.com/">a</a></p>');
+    eq(S('<p class="x" id="y" style="color:red" data-a="1"><a href="https://example.com/" class="c" target="_blank" rel="x" title="t">a</a></p>'),
+      '<p><a href="https://example.com/">a</a></p>');
   });
 
   test('sanitize: nested identical marks collapse', function () {
@@ -114,7 +114,7 @@
   });
 
   test('sanitize: link inside bold', function () {
-    eq(S('<p><b><a href="https://x.com">t</a></b></p>'), '<p><a href="https://x.com/"><strong>t</strong></a></p>');
+    eq(S('<p><b><a href="https://example.com">t</a></b></p>'), '<p><a href="https://example.com/"><strong>t</strong></a></p>');
   });
 
   test('sanitize: nested lists are kept', function () {
@@ -206,9 +206,9 @@
   });
 
   test('sanitize: href with quotes cannot break out of the attribute', function () {
-    var out = S('<a href=\'https://x.com/"onmouseover="alert(1)\'>t</a>');
+    var out = S('<a href=\'https://example.com/"onmouseover="alert(1)\'>t</a>');
     notContains(out, 'onmouseover="');
-    ok(/^<p><a href="https:\/\/x\.com\/[^"]*">t<\/a><\/p>$/.test(out), out);
+    ok(/^<p><a href="https:\/\/example\.com\/[^"]*">t<\/a><\/p>$/.test(out), out);
   });
 
   // ---------------- URL normalization ----------------

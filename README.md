@@ -163,3 +163,7 @@ Run through this in each target browser, with the page opened from disk.
 9. ⌘/Ctrl+click a link and confirm it opens in a new tab. A plain click
    should only place the cursor.
 10. Open print preview and confirm the layout is clean and status labels show.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
